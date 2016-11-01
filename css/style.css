@@ -1,0 +1,281 @@
+/*
+Project Name: Jazz Tribute Page
+Class: General Assembly Final Project 
+Author: Los Hill aka Black Zartan aka Los Escobar
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #0a0f0f;
+  font-size: 20px;
+  font-weight: 300;
+}
+/*a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}*/
+
+
+hr {
+  color: #f0f0f5;
+}
+/******************************************
+/* ESCOBAR BOOTSTRAP EDITION LAYOUT
+/*******************************************/
+.carousel-inner > .item > img {
+  margin: auto;
+}
+
+.carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  color: #0a0f0f;
+}
+
+#pagecolor {
+  background-color: #0a0f0f;
+}
+
+#pages {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #0a0f0f;
+  border-color: #23527c; 
+  border-style: solid;
+  border-width: 1px;
+  padding: 65px;
+  text-align: center;
+  margin: 100px;
+}
+
+.pagetext {
+  color: #e0ebeb;
+  font-size: 36px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+header {
+  padding: 15px;
+  background: #0a0f0f;
+  border-color: #e0ebeb; 
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+}
+header .logo {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 60px;
+  color: #e0ebeb; 
+  text-align: center;
+}
+
+header .login{
+  float: right;
+  border-radius: 10px;
+}
+
+header .btn {
+  color: #23527c;
+  float: right;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+header nav li {
+  display: none;
+}
+
+.login2 {
+  display: none;
+}
+
+.pagegroup {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+  color: #e0ebeb; 
+  text-align: center;
+}
+
+section {
+  background: #0a0f0f;
+  height: 620px;
+  width: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 36px;
+}
+footer {
+  background: #0a0f0f;
+  height: 81px;
+  width: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 28px;
+  padding: 10px;
+  border-color: #e0ebeb; 
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+}
+
+/***************************************************
+SOCIAL MEDIA INFO
+****************************************************/
+footer .socialmedia {
+  text-align: center;
+}
+
+/***************************************************
+MOBILE LAYOUT -- max-width 768px
+***************************************************/
+@media screen and (max-width: 768px) {
+
+body {
+  font-size: 14px;
+  }
+
+.logo {
+  font-size: 36px;
+  }
+
+header form {
+  height: 0;
+  transition: height 1s;
+  overflow: hidden;
+  }
+
+header nav ul {
+  height: 0;
+  transition: height 1s;
+  overflow: hidden;
+  }
+
+.login2 {
+  display: inline;
+  text-align: center;
+}
+
+#bkg {
+  background: #0a0f0f;
+  padding-top: 50px; 
+}
+
+.hamburger {
+  width: 2em;
+  height: 3px;
+  background: #e0ebeb;
+  border-radius: 1em;
+  cursor: pointer;
+  margin: 5px;
+  margin-left: 10px;
+  }
+
+header nav ul li:first-child {
+  display: block;
+  position: absolute;
+  right: .75em;
+  }
+
+header nav ul.slideDown  {
+  height: 13em;
+  }
+
+header nav li:first-child {
+  float: right;
+  cursor: pointer;
+  }
+
+header nav ul li {
+  margin: 0;
+  font-size: 16px;
+  float: none;
+  display: block;
+  }
+
+header nav ul li a {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  }
+
+.pagegroup {
+  display: none;  
+}
+
+
+footer {
+  height: 125px;
+  padding: 35px;
+}
+
+ }
+ /***************************************************
+METRO PC / TRAP PHONE LAYOUT -- max-width 497px
+****************************************************/
+ @media screen and (max-width: 497px) {
+
+header h1.logo {
+  font-size: 36px;
+  }
+
+footer {
+  height: 152px;
+  padding: 50px;
+}
+ }
+
